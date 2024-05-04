@@ -9,7 +9,7 @@ public class Usuario {
 	private String senha;
 	private ArrayList<Telefone> telefones;
 	private Endereco endereco;
-	
+
 	public Usuario(String nome, String cpf, String email, String senha, ArrayList<Telefone> telefones,
 			Endereco endereco) {
 		this.nome = nome;
@@ -44,11 +44,20 @@ public class Usuario {
 		this.senha = senha;
 	}
 
+	public ArrayList<Telefone> getTelefones() {
+		return telefones;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
 	public String getCpf() {
 		return cpf;
 	}
 
-	public ArrayList<Telefone> getTelefones() {
-		return telefones;
-	}
 }
